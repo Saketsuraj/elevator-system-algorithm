@@ -1,11 +1,11 @@
 # elevator-system-algorithm
 
-Let's say there are 200 floors and N=48 lifts so, the no of operational zones will be 200/48=4(approx)
-The no of lifts in each zone will be 48/4=12
+Let's say there are 200 floors and N=48 lifts so, the no of operational zones will be 200/48=4(approx).
+The no of lifts in each zone will be 48/4=12.
 
 Let's say each lift is with the capacity of 10 people and 900 kgs so, In the worst case 10people * 12 lifts = 120 people can travel together at a time in one zone which means in total 480 people at a time in complete building.
 
-Following are the solutions of the 4 problems: 
+## Following are the solutions of the 4 problems: 
 
 ## 1. Minimise the wait time for each lift.
 Ans- To reduce the wait time, lifts should be distributed among floors. In our case, we have 12 lifts for 200 floors in one zone so, we will find out the gap of floors a lift should be placed at i.e. 200/12=16(approx) which means every lift will be on the floors like 0,16,32,64 and so on so that each floor is reachable to a nearest lift which can be maximum 8 floors away in idle state.
